@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  position: relative;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 25px 40px 15px 40px;
+  border: 2px solid #111;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+ 
+/* Faint watermark in the background, purely decorative */
+body::before {
+  content: "WC";
+  position: absolute;
+  top: 90px;
+  right: 60px;
+  font-size: 260px;
+  font-weight: bold;
+  color: #000;
+  opacity: 0.05;
+  z-index: 0;
+  pointer-events: none;
+}
+ 
+header,
+aside,
+h1,
+article,
+footer {
+  position: relative;
+  z-index: 1;
+}
+ 
+/* -----------------------------------------------------------
+   Header bar
+   ----------------------------------------------------------- */
+header {
+  border-bottom: 2px solid #111;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+ 
+/* Small decorative block echoing the corner tab in the layout */
+header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 38px;
+  background-color: #111;
+}
+ 
+/* -----------------------------------------------------------
+   Press contact box
+   ----------------------------------------------------------- */
+aside {
+  float: right;
+  width: 230px;
+  margin: 0 0 15px 25px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: right;
+  color: #3a2a1a;
+}
+ 
+aside::first-line {
+  font-weight: bold;
+  color: #000;
+}
+ 
+/* -----------------------------------------------------------
+   Headline
+   ----------------------------------------------------------- */
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 25px 0;
+  color: #000;
+}
+ 
+/* -----------------------------------------------------------
+   Article body
+   ----------------------------------------------------------- */
+article {
+  clear: both;
+}
+ 
+article h2 {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.4;
+  margin: 10px 0 25px 0;
+  padding: 0 30px;
+}
+ 
+article p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+ 
+/* -----------------------------------------------------------
+   Company info box
+   ----------------------------------------------------------- */
+section {
+  display: block;
+  background-color: #fdfde3;
+  border: 3px solid #2e7d32;
+  padding: 15px 20px;
+  margin: 25px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+ 
+section a {
+  color: #1155cc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+ 
+/* -----------------------------------------------------------
+   Footer
+   ----------------------------------------------------------- */
+footer {
+  border-top: 1px solid #999;
+  margin-top: 20px;
+  padding-top: 8px;
+  font-style: italic;
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+}
+ 
+footer a {
+  color: #777;
+  text-decoration: underline;
+}
