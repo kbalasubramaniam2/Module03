@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
- 
+
 body {
   position: relative;
   max-width: 1000px;
@@ -12,8 +12,8 @@ body {
   color: #1a1a1a;
   background-color: #ffffff;
 }
- 
-/* Faint watermark in the background, purely decorative */
+
+/* Faint watermark */
 body::before {
   content: "WC";
   position: absolute;
@@ -26,7 +26,7 @@ body::before {
   z-index: 0;
   pointer-events: none;
 }
- 
+
 header,
 aside,
 h1,
@@ -35,10 +35,8 @@ footer {
   position: relative;
   z-index: 1;
 }
- 
-/* -----------------------------------------------------------
-   Header bar
-   ----------------------------------------------------------- */
+
+/* Header bar */
 header {
   border-bottom: 2px solid #111;
   padding-bottom: 6px;
@@ -47,8 +45,9 @@ header {
   letter-spacing: 1px;
   font-size: 15px;
 }
- 
-/* Small decorative block echoing the corner tab in the layout */
+
+/* Small block echoing the corner tab
+   Color changed from black to navy */
 header::after {
   content: "";
   display: block;
@@ -57,12 +56,10 @@ header::after {
   right: 0;
   width: 30px;
   height: 38px;
-  background-color: #111;
+  background-color: #1b3a6b;
 }
- 
-/* -----------------------------------------------------------
-   Press contact box
-   ----------------------------------------------------------- */
+
+/* Press contact box */
 aside {
   float: right;
   width: 230px;
@@ -72,15 +69,13 @@ aside {
   text-align: right;
   color: #3a2a1a;
 }
- 
+
 aside::first-line {
   font-weight: bold;
   color: #000;
 }
- 
-/* -----------------------------------------------------------
-   Headline
-   ----------------------------------------------------------- */
+
+/* Headline */
 h1 {
   font-size: 34px;
   font-weight: bold;
@@ -88,14 +83,12 @@ h1 {
   margin: 0 0 25px 0;
   color: #000;
 }
- 
-/* -----------------------------------------------------------
-   Article body
-   ----------------------------------------------------------- */
+
+/* Article body */
 article {
   clear: both;
 }
- 
+
 article h2 {
   text-align: center;
   font-style: italic;
@@ -105,37 +98,33 @@ article h2 {
   margin: 10px 0 25px 0;
   padding: 0 30px;
 }
- 
+
 article p {
   text-align: justify;
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 18px;
 }
- 
-/* -----------------------------------------------------------
-   Company info box
-   ----------------------------------------------------------- */
+
+/* Company info box */
 section {
   display: block;
-  background-color: #fdfde3;
-  border: 3px solid #2e7d32;
+  background-color: #eaf2fb;
+  border: 3px solid #1b3a6b;
   padding: 15px 20px;
   margin: 25px 0;
   font-size: 15px;
   line-height: 1.6;
   text-align: justify;
 }
- 
+
 section a {
-  color: #1155cc;
+  color: #b3541e;
   font-weight: bold;
   text-decoration: underline;
 }
- 
-/* -----------------------------------------------------------
-   Footer
-   ----------------------------------------------------------- */
+
+/* Footer */
 footer {
   border-top: 1px solid #999;
   margin-top: 20px;
@@ -145,7 +134,7 @@ footer {
   color: #777;
   text-align: center;
 }
- 
+
 footer a {
   color: #777;
   text-decoration: underline;
